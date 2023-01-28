@@ -7,8 +7,8 @@ Usage:
 >__Program requires .logfind file__  
 
 Example usage:    
-./logfind hello, It will print files including "hello".    
-./logfind hello my -o, It will ptrit files includg "hello" and "my"
+__./logfind hello__, It will print files including "hello".    
+__./logfind hello my -o__, It will ptrit files includg "hello" and "my"
 
 Architecture:   
 

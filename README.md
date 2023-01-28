@@ -8,8 +8,8 @@ Usage:
 >__Program requires .logfind file__  
 
 Way of writing .logfind file:
->*.py    
->jobs.txt
+>*.(file_extension)   
+>one_of_file_name
 
 Example usage:    
     

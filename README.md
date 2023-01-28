@@ -1,3 +1,3 @@
 # logfind
 
-Linux search keyword program from files
+Linux program for searching keywords form files

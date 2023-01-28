@@ -7,14 +7,14 @@ int main(int argc, char *argv[]){
 
 	char **extractArgv 		= NULL;
 	char **keywordList 		= NULL;
-	char **wildFileList 	= NULL;
-	char **fileNameList 	= NULL;
-	char **includingFile 	= NULL;
+	char **wildFileList 		= NULL;
+	char **fileNameList 		= NULL;
+	char **includingFile 		= NULL;
 	int keywordListC 		= 0;
 	int wildFileListC 		= 0;
 	int fileNameListC		= 0;
 	int includingFileC 		= 0;
-	int option 				= 0;
+	int option 			= 0;
 
 
 	if (argc < 2){

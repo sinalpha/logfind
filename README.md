@@ -9,7 +9,7 @@ Usage:
 
 Way of writing .logfind file:
 >*.(file extension)   
->(one of file name)
+>(one of the file names)
 
 Example usage:    
     

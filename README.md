@@ -8,8 +8,8 @@ Usage:
 >__Program requires .logfind file__  
 
 Way of writing .logfind file:
->*.(file_extension)   
->(one_of_file_name)
+>*.(file extension)   
+>(one of file name)
 
 Example usage:    
     

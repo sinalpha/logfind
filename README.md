@@ -7,6 +7,10 @@ Usage:
 >./logfind (keyword) (keyword) [-o: AND option]    
 >__Program requires .logfind file__  
 
+Usage:
+>*.py    
+>jobs.txt
+
 Example usage:    
     
 __./logfind hello__, It will print files including "hello".    

@@ -6,7 +6,7 @@ Usage:
 >./logfind (keyword) (keyword) [-o: AND option]    
 >__Program requires .logfind file__  
 
-Example usage:
+Example usage:    
 ./logfind hello, It will print files including "hello".    
 ./logfind hello my -o, It will ptrit files includg "hello" and "my"
 

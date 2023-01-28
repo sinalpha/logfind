@@ -9,7 +9,7 @@ Usage:
 
 Way of writing .logfind file:
 >*.(file_extension)   
->one_of_file_name
+>(one_of_file_name)
 
 Example usage:    
     

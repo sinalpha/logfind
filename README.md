@@ -8,4 +8,4 @@ Usage:
             
 Architecture:   
 
-|:<img src="src/architechure.png" width="500px" height="1000px" ></img><br/>:|
+<center><img src="src/architechure.png" width="500px" height="1000px" ></img><br/></center>

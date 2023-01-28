@@ -7,7 +7,7 @@ Usage:
 >./logfind (keyword) (keyword) [-o: AND option]    
 >__Program requires .logfind file__  
 
-Usage:
+way of writing .logfind file:
 >*.py    
 >jobs.txt
 

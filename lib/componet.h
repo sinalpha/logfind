@@ -17,10 +17,10 @@ int returnOption(int argc, char *argv[]){
 }
 char **extractKeyword(int argc, char *argv[], int option, int *keywordListC){
 
-    //인수 오류 걸러내기
-    if(argv == NULL || keywordListC == NULL) return NULL;
+    	//인수 오류 걸러내기
+    	if(argv == NULL || keywordListC == NULL) return NULL;
 
-    if(argc < 0 || option < 0) return NULL;
+    	if(argc < 0 || option < 0) return NULL;
 
 
     //변수 정의

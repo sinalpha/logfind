@@ -4,7 +4,7 @@ Linux program for searching keywords form files
 
 Usage:     
         ./logfind (keyword) (keyword) [-o: AND option]    
-        Program requires .logfind file
+        __Program requires .logfind file__
         
 
 <img src="src/architechure.png" width="500px" height="1000px" ></img><br/>

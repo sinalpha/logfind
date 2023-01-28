@@ -14,7 +14,8 @@ __./logfind hello my -o__, It will ptrit files includg "hello" and "my"
 
 Example .logfind:
 
-![image](https://user-images.githubusercontent.com/59336397/215263143-3a707ad4-755c-4781-85fd-841935f59a2e.png)
+<p align="center">![image](https://user-images.githubusercontent.com/59336397/215263176-8e097865-902f-4aaf-8c39-e61e6dd38bc3.png)</p>
+
 
 Architecture:   
 

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "lib/componet.h"
+#include "lib/component.h"
 #include "lib/free.h"
 
 

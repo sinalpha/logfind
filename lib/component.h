@@ -23,36 +23,36 @@ char **extractKeyword(int argc, char *argv[], int option, int *keywordListC){
     	if(argc < 0 || option < 0) return NULL;
 
 
-    //변수 정의
+    	//변수 정의
 	char **keywordList 	= NULL;
 	int keywordC 		= 0; //키워드 갯수; keywordListC는 keywordList의 크기다
 
 
-    //키워드가 최대 최대 문자열 이하인지 점검
+    	//키워드가 최대 최대 문자열 이하인지 점검
 	for(int i = 0; i < argc; i++)
 			if(strlen(argv[i]) == MAX_DATA) goto error;
 
 
-    //키워드 갯수; 옵션 있음 -> -2, 옵션 없음 -> -1
+    	//키워드 갯수; 옵션 있음 -> -2, 옵션 없음 -> -1
 	if(option) 	keywordC = argc - 2;
 	else 		keywordC = argc - 1;
 	
 	*keywordListC = keywordC; 	//키워드 갯수 리턴
 
 
-    //리턴할 2차원 메모리 할당
+    	//리턴할 2차원 메모리 할당
 	keywordList = (char**)malloc(sizeof(char*) * keywordC );
 	if (keywordList == NULL)  goto error;
 
 
-    //리턴할 1차원 메모리 할당
+    	//리턴할 1차원 메모리 할당
 	for(int i = 0; i < keywordC; i++){
 		keywordList[i] = (char*)malloc( sizeof(char) * MAX_DATA);
 		if (keywordList[i] == NULL) goto error;
 	}
 
 
-    //argv에서 keywordList로 복사 
+    	//argv에서 keywordList로 복사 
 	for(int i = 1, index = 0; i < argc; i++){
 		if( i  == option)
 			continue;
@@ -61,10 +61,6 @@ char **extractKeyword(int argc, char *argv[], int option, int *keywordListC){
 			index++;
 		}	
 	}
-
-	//for(int i = 0; i < keywordC; i++){
-	//	printf("%s\n",keyword[i]);
-	//}
 
 
 	return keywordList;
@@ -113,7 +109,7 @@ char **readWildFile(int *wildFileListC){
     	}
 
 
-    //읽어 온 파일 목록 크기 리턴
+   	 //읽어 온 파일 목록 크기 리턴
 	*wildFileListC = lineCount;
 
 
@@ -148,8 +144,8 @@ char **readFileName(char **wildFileList, int wildFileListC, int *fileNameListC){
 	if(fileNameList == NULL) goto error;
 
 	//file의 1차원 메모리 할당 및 읽어와야 할 파일의 이름 저장 
-	//i: wildFileList 					루프용 인덱스 변수
-	//m: fileNameList 					루프용 인덱스 변수
+	//i: wildFileList 			루프용 인덱스 변수
+	//m: fileNameList 			루프용 인덱스 변수
 	//j: 와일드 카드에 해당하는 파일 갯수 루프용 인덱스 변수
 	for(int i = 0, m = 0; i < wildFileListC; i++){
 		
@@ -182,7 +178,7 @@ char **findFile(int option, char** keywordList, int keywordListC, char** fileNam
 	int goal 		= 0;	//각 파일이 포함하고 있어야 할 키워드(검색 키워드)의 갯수
 	int sumOfGoal 		= 0;	//각 파일이 포함하고 있는 검색 키워드의 갯수  ex) 검색 키워드: google, facebook, 파일: Hello! google -> 루프후 sumofgoal: 1;
 	size_t len 		= 0;	//함수의 인수용 변수
-	ssize_t read;					//함수의 인수용 변수
+	ssize_t read;			//함수의 인수용 변수
 	
 
 	//키워드의 갯수에 따른 메모리 할당

@@ -51,7 +51,7 @@ char **readFileName(char **wildFileList, int wildFileListC, int *fileNameListC){
 
 error:
 	wordfree(&p);
-	return NULL;
+	return fileNameList;
 
 }
 

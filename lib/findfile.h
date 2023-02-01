@@ -70,7 +70,7 @@ char **findFile(int option, char** keywordList, int keywordListC, char** fileNam
 error:
 	if (checkEx) free(checkEx);
 	if (file) fclose(file);
-	return NULL;
+	return includingFile;
 }
 
 #endif

@@ -59,7 +59,7 @@ char **extractKeyword(int argc, char *argv[], int option, int *keywordListC){
 	return keywordList;
 
 error:
-	return NULL;
+	return keywordList;
 
 }
 

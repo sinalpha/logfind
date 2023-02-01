@@ -10,7 +10,7 @@ char **readFileName(char **wildFileList, int wildFileListC, int *fileNameListC){
 	
 	char **fileNameList 		= NULL; //리턴할 파일 이름list 
 	char **fileNameListTemp 	= NULL; //와일드 카드파일에따른 파일 이름 리스트 임시저장 변수
-	int sumOfFileName 			= 0;	//총 읽어와야 할 파일 갯수
+	int sumOfFileName 		= 0;	//총 읽어와야 할 파일 갯수
 	wordexp_t p;
 
 
@@ -29,8 +29,8 @@ char **readFileName(char **wildFileList, int wildFileListC, int *fileNameListC){
 	if(fileNameList == NULL) goto error;
 
 	//file의 1차원 메모리 할당 및 읽어와야 할 파일의 이름 저장 
-	//i: wildFileList 					루프용 인덱스 변수
-	//m: fileNameList 					루프용 인덱스 변수
+	//i: wildFileList 			루프용 인덱스 변수
+	//m: fileNameList 			루프용 인덱스 변수
 	//j: 와일드 카드에 해당하는 파일 갯수 루프용 인덱스 변수
 	for(int i = 0, m = 0; i < wildFileListC; i++){
 		

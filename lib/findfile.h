@@ -23,7 +23,7 @@ char **findFile(int option, char** keywordList, int keywordListC, char** fileNam
 
 
 	//포함하고 있어야할 키워드 갯수; and 옵션 있음 -> keywordListC, 없음 -> 1. 
-	if(option != 0) goal = keywordListC;
+	if (option != 0) goal = keywordListC;
 	else 			goal = 1;
 
 

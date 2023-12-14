@@ -8,7 +8,7 @@ Build:
 >make
 
 Usage:     
->./logfind (keyword1) (keyword2) [-o: AND option]    
+>./logfind (keyword1) [keyword2] [-o: AND option]    
 >__Program requires .logfind file__  
 
 Way of writing .logfind file:

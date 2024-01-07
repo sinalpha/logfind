@@ -9,9 +9,9 @@ Build:
 
 Usage:     
 >./logfind (keyword1) [keyword2] [-o: AND option]    
->__Program requires .logfind file__  
+>__The program requires .logfind file__  
 
-Way of writing .logfind file:
+A way of writing .logfind file:
 >*.(file extension)   
 >(one of the file names)
 
